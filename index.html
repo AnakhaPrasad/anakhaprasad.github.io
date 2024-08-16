@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Anakha's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Navbar on top and fixed */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Parallax banner */
+        .parallax-banner {
+            background-image: url('./img/one.jpg');
+            min-height: 70vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .parallax-banner h1 {
+            font-size: 3rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        /* Second image as background */
+        .background-section {
+            background-image: url('./img/two.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        /* Full-width bottom section */
+        .full-width-section {
+            background-image: url('./img/three.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+
+        /* Standardize heading sizes and alignment */
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left;
+            color: black;
+        }
+
+        /* Remove excess spacing */
+        .skills-section .row > div {
+            padding: 5px;
+        }
+
+        /* General container padding for sections */
+        .container {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Anakha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Parallax Banner -->
+    <section class="parallax-banner">
+        <h1>I'm Anakha, scroll down and know more about me</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="./img/me.jpeg" alt="Anakha's Picture" class="about-img img-fluid ">
+            </div>
+            <div class="col-md-8">
+                <h3>About Me</h3>
+                <p><strong>Birthday:</strong> 8 January 2004</p>
+                <p><strong>Age:</strong> 20</p>
+                <p><strong>Location:</strong> Kerala, India</p>
+                <p><strong>Phone:</strong> +91 7510713255</p>
+                <p><strong>Email:</strong> anakha@example.com</p>
+                <p>I am a passionate German language student, preparing for an IT Specialist Ausbildung in Germany. I’m committed to continuous learning and eager to enhance my skills in the field of Information Technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="container my-5">
+        <h3>My Resume</h3>
+        <div class="mb-4">
+            <h4>Education</h4>
+            <div>
+                <p><strong>Higher Secondary Education</strong></p>
+                <p>VGSSAHSS, Nediyavila, Kerala, India</p>
+                <p><em>Completed: 2022</em></p>
+            </div>
+            <div>
+                <p><strong>High School Education</strong></p>
+                <p>Holy Angel's EMHSS, Adoor, Kerala, India</p>
+                <p><em>Completed: 2020</em></p>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h4>Career Objective</h4>
+            <p>To pursue IT Specialist training in Germany, where I can apply my existing knowledge and develop new skills. My goal is to contribute effectively in the IT sector and stay at the forefront of technological advancements.</p>
+        </div>
+
+        <div>
+            <h4>Additional Information</h4>
+            <div>
+                <p><strong>German Language Proficiency:</strong> Completed a comprehensive German language course, equipping me with strong communication skills for professional and personal interactions in Germany.</p>
+            </div>
+            <div>
+                <p><strong>Technical Skills:</strong> Proficient in Microsoft Word, Excel, PowerPoint, and HTML. I am committed to expanding my technical abilities through specialized IT training.</p>
+            </div>
+            <div>
+                <p><strong>Goal-Oriented:</strong> My immediate focus is on securing an IT Specialist training opportunity in Germany, where I can contribute to innovative projects and continue my professional growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container my-5">
+        <h3>My Skills</h3>
+        <div class="row skills-section">
+            <div class="col-md-6">
+                <div class="p-2 mb-2">
+                    <p><strong>Microsoft Word</strong></p>
+                </div>
+                <div class="p-2 mb-2">
+                    <p><strong>PowerPoint</strong></p>
+                </div>
+                <div class="p-2 mb-2">
+                    <p><strong>Excel</strong></p>
+                </div>
+                <div class="p-2 mb-2">
+                    <p><strong>HTML</strong></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-2 mb-2">
+                    <p><strong>German (B2 Level)</strong></p>
+                </div>
+                <div class="p-2 mb-2">
+                    <p><strong>English</strong></p>
+                </div>
+                <div class="p-2 mb-2">
+                    <p><strong>Communication Skills</strong></p>
+                </div>
+                <div class="p-2 mb-2">
+                    <p><strong>Problem-Solving Skills</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Width Section at the Bottom -->
+    <section class="full-width-section"></section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-4">
+        <p>&copy; 2024 Anakha Prasad | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
