@@ -17,7 +17,7 @@ body{
 
 /* Parallax banner */
 .parallax-banner {
-    background-image: url('/one.jpg');
+    background-image: url('../one.jpg');
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -58,7 +58,7 @@ body{
 
 /* Second image as background */
 .background-section {
-    background-image: url('/two.jpg');
+    background-image: url('../two.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -67,7 +67,7 @@ body{
 
 /* Full-width bottom section */
 .full-width-section {
-    background-image: url('/three.jpg');
+    background-image: url('../three.jpg');
     background-size: cover;
     background-position: center;
     height: 300px;
