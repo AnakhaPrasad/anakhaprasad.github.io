@@ -58,7 +58,7 @@ body{
 
 /* Second image as background */
 .background-section {
-    background-image: url('./two.jpg');
+    background-image: url('/two.jpg');
     background-size: cover;
     background-position: center;
     color: white;
