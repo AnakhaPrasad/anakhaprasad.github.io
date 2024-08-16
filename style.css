@@ -1,0 +1,174 @@
+body{
+    background-color: #212025;
+    padding-top: 50px;
+   }
+   p,a{
+    color: #fff;
+   }
+   /* Navbar on top and fixed, remove extra space */
+   .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0;
+    background-color: #676cdb;
+}
+
+/* Parallax banner */
+.parallax-banner {
+    background-image: url('./one.jpg');
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+.parallax-banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #676cdb3b;
+}
+
+.parallax-banner h1 {
+    font-size: 3rem;
+    text-align: center;
+    background: rgb(103 108 219 / 47%);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.parallax-banner p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+/* Second image as background */
+.background-section {
+    background-image: url('./two.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+/* Full-width bottom section */
+.full-width-section {
+    background-image: url('./three.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/* Standardize heading sizes and alignment */
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    color: #676cdb;
+}
+
+/* Remove excess spacing */
+.skills-section .row > div {
+    padding: 5px;
+}
+
+
+/* About Section styling */
+#about {
+    background-color: #676cdb;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h3 {
+    color: #ffffff;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+/* Resume Section styling */
+#resume .col-md-6 {
+    padding: 20px;
+}
+
+#resume h4 {
+    color: #676cdb;
+    margin-bottom: 20px;
+}
+
+/* Skills Section styling */
+.skills-section .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.skills-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.skills-section .card-body {
+    text-align: center;
+}
+.skills p{
+    color: #676cdb;
+    margin-bottom: 0;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .parallax-banner h1 {
+        font-size: 2rem;
+    }
+
+    .parallax-banner p {
+        font-size: 1rem;
+    }
+
+    .skills-section .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .full-width-section {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .parallax-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .parallax-banner p {
+        font-size: 0.9rem;
+    }
+
+    #about {
+        padding: 30px 15px;
+        max-width: 95%;
+    }
+
+    .skills-section .card {
+        margin-bottom: 5px;
+    }
+}
